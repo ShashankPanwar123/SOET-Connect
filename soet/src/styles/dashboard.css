@@ -1,0 +1,63 @@
+/* =====================
+   Dashboard Styles
+   ===================== */
+.dashboard-layout {
+  display: flex;
+  min-height: calc(100vh - 64px);
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 28px 32px;
+  background: #f1f5f9;
+  overflow-y: auto;
+}
+
+/* Analytics Cards */
+.analytics-card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.06);
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+.analytics-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.analytics-card h5 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.analytics-card h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+/* Notice card badge colors */
+.badge.bg-primary { background: rgba(79,70,229,0.15) !important; color: #4f46e5 !important; }
+.badge.bg-success { background: rgba(16,185,129,0.15) !important; color: #10b981 !important; }
+.badge.bg-warning { background: rgba(245,158,11,0.15) !important; color: #f59e0b !important; }
+.badge.bg-danger  { background: rgba(239,68,68,0.15)  !important; color: #ef4444  !important; }
+.badge.bg-info    { background: rgba(14,165,233,0.15)  !important; color: #0ea5e9  !important; }

@@ -1,0 +1,60 @@
+/* =====================
+   Navbar Styles
+   ===================== */
+.navbar-custom {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  padding: 0 28px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s;
+}
+
+.logo::before {
+  content: '🎓';
+  font-size: 22px;
+}
+
+.logo:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.navbar-right .btn {
+  font-size: 13px;
+  padding: 7px 16px;
+  border-radius: 8px;
+}
+
+.navbar-right .btn-danger {
+  background: rgba(239,68,68,0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239,68,68,0.3);
+}
+
+.navbar-right .btn-danger:hover {
+  background: rgba(239,68,68,0.3);
+  color: white;
+}
